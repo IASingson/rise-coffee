@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Which character set to use. Leave this out and apostrophes turn into garbage. -->
+	<meta charset="utf-8">
+
+	<!-- Tells a phone to use its real width instead of pretending to be a desktop. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- The browser tab text, and what Google shows in search results. Not a heading on the page. -->
+	<title>About</title>
+
+	<!-- STYLES -->
+	 <link rel="stylesheet" href="normalize.css"> <!-- Normalize browser default settings -->
+	 <link rel="stylesheet" href="layout.css"> <!-- This controls our stucture and layout -->
+	 <link rel="stylesheet" href="style.css"> <!-- This is where we add all the styling to the elements of the pages -->
+    
+    <!-- FONTS -->
+	<!-- STEP 2: your Google Fonts links go here -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap">
+
+</head>
+
+
+<body><!-- Main content that users will see -->
+    <!-- HEADER: top section of the page that includes the same elements for every  page -->
+    <header>
+		<!-- LOGO -->
+		<a href="index.html"><img src="images/rise-logo.svg" id="rise-icon" alt=""></a>
+
+		<!-- NAVIGATION: a menu is a LIST of related links, so it is marked up as a ul with li inside.
+		     CSS takes the bullets off later, but underneath it stays a list, because that is what it is. -->
+		<nav>
+			<ul>
+				<li><a href="index.html" class="nav-link">Home</a></li>
+				<li><a href="about.html" class="nav-link">About</a></li>
+				<li><a href="contact.html" class="nav-link">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- The # in this href jumps to the element with id="visit" further down THIS page,
+		     instead of opening a different page. -->
+		<a href="#visit" class="button">Visit Us</a>
+    </header>
+
+    <!-- MAIN: any content between the header and footer -->
+    <main>
+        <!-- HERO section: the first thing the visitor sees -->
+         <section class="background-beige section-padding">
+            <div class="container">
+                <!-- Row -->
+                <div class="row row-justify-center">
+                    <!-- Column One -->
+                    <div class="col col-lg-12">
+                        <h1 class="text-center">about us</h1>
+                    </div>
+                </div>
+
+                <!-- Row two -->
+                 <div class="row">
+                    <!-- Column one -->
+                    <div class="col col-lg-12">
+                        <div class="hero-img" id="about-hero-img">
+                            <img src="images/rise-icon-4.svg" alt="" class="hero-icon" id="about-hero-icon">
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+
+         </section>
+
+         <!-- OUR STORY section: gold band with single image on the right-->
+          <section class="background-gold section-padding position-relative">
+            <img src="images/gradient-2.png"  class="gradient-1 gradient-2" alt="">
+            <div class="container z-index-1">
+                <!-- Row -->
+                <div class="row row-align-center row-justify-between">
+                    <!-- Column one -->
+                    <div class="col col-lg-8">
+                        <h2>our story</h2>
+                        <p>
+                            Rise Coffee began as a pop-up espresso cart in 2016, run by Jenny & Mark who believed mornings deserved better. 
+                            What started with a borrowed machine and a handful of regulars has grown into a community hub where great coffee meets genuine connection. 
+                            We’ve stayed true to our roots: small-batch roasting, a love for craft, and a commitment to keeping coffee approachable.
+                        </p>
+                    </div>
+
+                    <!-- Column two:-->
+                    <div class="col col-lg-4">
+                        <div class="card-img-wrap">
+                            <img src="images/rise-coffee-7.jpg" class="card-img" alt="">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+          </section>
+
+          <!-- OUR VALUES section: community first, care over pretension, and sustainability always-->
+           <section class="background-beige section-padding">
+                <div class="container">
+
+                    <!-- Row one -->
+                    <div class="row">
+                        <!-- Column -->
+                         <div class="col col-lg-12">
+                            <h2 class="text-center">our values</h2>
+                         </div>
+                    </div>
+                    <!-- Row one ends -->
+
+                    <!-- Row two -->
+                    <div class="row row-justify-between">
+                        <!-- Column one -->
+                        <div class="col col-lg-4">
+                            <img src="images/community-first-icon.svg" alt="" class="icon-center">
+                            <h3 class="text-center">community first</h3>
+                            <p>Coffee is more than a drink; it's a way to bring people together.</p>
+                        </div>
+
+                        <!-- Column two -->
+                        <div class="col col-lg-4">
+                            <img src="images/care-over-pretension-icon.svg" alt="" class="icon-center">
+                            <h3 class="text-center">care over pretension</h3>
+                            <p>We source responsibly and roast with care, but keep the vibe laid-back and welcoming.</p>
+                        </div> 
+
+                        <!-- Column three -->
+                        <div class="col col-lg-4">
+                            <img src="images/sustainability-always.svg" alt="" class="icon-center">
+                            <h3 class="text-center">sustainability-always</h3>
+                            <p>From cups to direct-trade partnerships, we believe every choice matters.</p>
+                        </div>
+                    </div>
+                    <!-- Row two ends -->
+                </div>
+           </section>
+
+          <!-- EVENTS AT RISE section: right under our values. Booking events at rise with inquire now button -->
+           <section class="background-beige section-padding">
+            <div class="container">
+                <!-- Row -->
+                <div class="row row-align-center row-justify-between">
+                    <!-- Column one -->
+                    <div class="col col-lg-6">
+                        <div class="card-img-wrap">
+                            <img src="images/rise-coffee-8.jpg" alt="group-of-people-on-patio" class="card-img">
+                        </div>
+                    </div>
+
+                    <!-- Column two -->
+                    <div class="col col-lg-6">
+                        <h2>events at rise</h2>
+                        <p>
+                            Looking for space with good energy(and even better coffee)? Our café is available for 
+                            community gatherings, art shows, live music, workshops, and private events. 
+                            Whether you’re planning an intimate reading or a lively launch party, we’ve got the space — and, of course, the coffee.
+                        </p>
+                        <!-- Button -->
+                        <a href="contact.html" class="button button-secondary">Inquire Now</a>
+                    </div> 
+                </div>
+                <!-- Row ends -->
+            </div>
+           </section>
+
+          <!-- MORE THAN A CAFE section: another gold band in the mockup-->
+           <section class="background-gold section-padding">
+            <div class="container">
+                <!-- Row -->
+                <div class="row row-align-center">
+                    <!-- Column one -->
+                    <div class="col col-lg-6">
+                        <h2>more than a cafe</h2>
+                        <p>
+                            We’re proud to support local artists, host open mic nights, and partner with neighborhood nonprofits.
+                            When you visit Rise Coffee, you’re not just grabbing a latte — you’re plugging into a space that celebrates 
+                            creativity, connection, and community. 
+                        </p>
+                    </div>
+
+                    <!-- Column two -->
+                    <div class="col col-lg-6">
+                        <div class="card-img-wrap">
+                            <img src="images/rise-coffee-3.jpg" alt="cup-of-coffee-on-table" class="card-img">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Row ends -->
+            </div>
+           </section>
+
+          <!-- WHAT OUR REGULARS ARE SAYING section: dark pink band in the mockup just before the footer. -->
+           <section class="background-maroon-light section-padding">
+            <img src="images/rise-icon-2.svg" class="customer-review-icon" alt="">
+            <div class="container">
+                <!-- Row one -->
+                <div class="row row-justify-center">
+                    <div class="col col-lg-7">
+                        <h2 class="text-white">what our regulars are saying...</h2>
+                    </div>
+                </div>
+                <!-- Row two -->
+                <div class="row row-justify-center row-align-center">
+                    <div class="col col-lg-6">
+                        <p class="customer-review">"Perfect spot for studying. Great coffee and even better vibes"</p>
+                    </div>
+                </div>
+
+                <!-- Row three -->
+                <div class="row row-justify-center row-align-center">
+                    <div class="col col-lg-2">
+                        <p class="customer-name">- MIGUEL R.</p>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+    </main>
+
+    <!-- FOOTER: copy right, contact info, address, and store hours. Has a dark maroon band. -->
+     <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Column one: rise logo, copy right, privacy policy, and terms -->
+                <div class=" col col-lg-4">
+                    <a href="index.html"><img src="images/rise-logo.svg" class="footer-rise-icon" alt=""></a>
+                    <p>© 2025 Rise Coffee</p>
+				    <a href="#" class="nav-link">Privacy Policy</a>
+				    <a href="#" class="nav-link">Terms</a>
+                </div>
+
+                <!-- Column two: get in touch information -->
+                <div class="col col-lg-4">
+                    <h3 class="text-white">Get in Touch</h3>
+                    <img src="images/phone-ringing-icon.svg" alt="">
+				    <p class="">780-939-5224</p>
+
+                    <img src="images/email-icon.svg" alt="">
+				    <p>hello@risecoffee.com</p>
+
+
+                    <img src="images/location-pin-icon.png" alt="">
+				    <p>304 Main St<br>Wellington, ON  K0K 3L0</p>
+                </div>
+                
+
+                <!-- Column three: hours -->
+                <div class="col col-lg-4">
+			        <h3 class="text-white">Hours</h3>
+			        <ul>
+				        <li>Monday: <strong>7am – 5pm</strong> </li>
+				        <li>Tuesday: <strong>7am – 5pm</strong> </li>
+				        <li>Wednesday: <strong>7am – 5pm</strong> </li>
+				        <li>Thursday: <strong>7am - 7pm</strong> </li>
+				        <li>Friday:  <strong>7am – 5pm</strong> </li>
+				        <li>Saturday: <strong>9am - 5pm</strong> </li>
+				        <li>Sunday: <strong>9am - 3pm</strong></li>
+  			        </ul>
+                </div>
+            </div>
+		</div>
+     </footer>
+</body>
+
+</html>
