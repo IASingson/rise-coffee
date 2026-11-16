@@ -217,6 +217,12 @@ nav ul
     border-radius: 0px;
 }
 
+.card-img-wrap-2
+{
+    aspect-ratio: 536/600;
+    border-radius: 300px 300px 0px 0px; /* clock wise order starting from top left, then top right etc.This rounds the top two corner. */
+}
+
 .card-img
 {
     width: 100%;
