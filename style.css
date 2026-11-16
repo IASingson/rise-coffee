@@ -212,6 +212,10 @@ nav ul
     border-radius: 200px 200px 0px 0px; /* clock wise order starting from top left, then top right etc.This rounds the top two corner. */
     overflow: hidden; /* hides the overflow */
 }
+.about-card-img-wrap
+{
+    border-radius: 0px;
+}
 
 .card-img
 {
@@ -236,6 +240,11 @@ nav ul
     flex-grow: 1;
 }
 
+.about-card-border
+{
+    border-top: none;
+}
+
 .hero-img
 {
     position: relative;
@@ -246,12 +255,13 @@ nav ul
 }
 
 
-#about-hero-img
+.about-hero-img
 {
     aspect-ratio: 16/9;
     background-image: url(images/rise-coffee-2.jpg);
     object-fit: cover;
     background-position: 50% 75%;
+    margin-left: 10%;
 
 }
 
@@ -265,11 +275,11 @@ nav ul
     
 }
 
-#about-hero-icon
+.about-hero-icon
 {
-    width: 30%;
-    top: 72%;
-    right: 77%;
+    width: 400px;
+    top: 60%;
+    right: 83%;
     transform: rotate(0deg);
 
 }
@@ -305,6 +315,15 @@ nav ul
     overflow:hidden;
 }
 
+
+.footer-copy-right
+{
+    padding-top:100px;
+}
+.footer-details
+{
+    padding-right: 12px;
+}
 
 
 /* ICONS */
