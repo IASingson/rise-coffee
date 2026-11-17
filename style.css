@@ -341,7 +341,7 @@ nav ul
 .icon-center
 {
     position: relative;
-    left: 172px;
+    left: 37%;
 }
 
 .customer-review-icon
@@ -403,7 +403,16 @@ nav ul
     h3 {font-size: 28px;}
     .paragraph-large {font-size: 30px;}
     .section-padding {padding: 56px 0;}
+    .hero-icon {display: none;}
 
+    .about-hero-img {display:none;}
+
+    .location-content {text-align:center;}
+    .hours-content {text-align: center;}
+
+    .contact-form-heading {text-align:center;}
+
+    .rise-coffee-map {width: 100%;}
 }
 
 @media screen and (max-width: 480px)
@@ -413,6 +422,7 @@ nav ul
     nav {display: none;}
     .nav-visit {display: none;}
     .hamburger {display: flex;}
+    .hero-icon {display: none}
 
     .contact form {grid-template-columns: 1fr;}
     .field-wide {grid-column: 1/2;}
@@ -425,4 +435,16 @@ nav ul
 
     .detail-row {flex-direction: column;}
     .info-grid {grid-template-columns: 1fr;}
+
+    .about-hero-img {display:none;}
+
+    
+    .location-content {text-align:center;}
+    .hours-content {text-align: center;}
+
+    .contact-form-heading {text-align:center;}
+
+    .rise-coffee-map {width: 100%;}
+    
+    .field-wide{grid-column:1/3;}
 }
