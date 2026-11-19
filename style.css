@@ -23,6 +23,10 @@ header
      display: flex; /* Children sit side by side instead of stacking*/
      align-items: center; /* Logo and links line through their middles, not their tops*/
      justify-content: space-between; /* First child hard left, last child hard right, the gap shared put between*/
+     /* rules for sticky header*/
+     position: sticky;
+     top:0;
+     z-index: 10;
 }
 
 .hamburger
